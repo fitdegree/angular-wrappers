@@ -1,0 +1,14 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/ngx-perfect-scrollbar",
+  "lib": {
+    "entryFile": "src/public-api.ts",
+    "styleIncludePaths": [
+      "../../node_modules/perfect-scrollbar/css/perfect-scrollbar.css"
+    ]
+  },
+  "allowedNonPeerDependencies": [
+    "perfect-scrollbar",
+    "resize-observer-polyfill"
+  ]
+}

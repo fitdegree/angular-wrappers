@@ -11,6 +11,17 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
+    "paths": {
+      "angular2-counto": [
+        "dist/angular2-counto"
+      ],
+      "angular2-text-mask": [
+        "dist/angular2-text-mask"
+      ],
+      "ngx-perfect-scrollbar": [
+        "dist/ngx-perfect-scrollbar"
+      ]
+    },
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,

@@ -1,7 +1,106 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
-  "newProjectRoot": "projects",
+  "newProjectRoot": "libs",
   "projects": {
+    "ngx-perfect-scrollbar": {
+      "projectType": "library",
+      "root": "libs/ngx-perfect-scrollbar",
+      "sourceRoot": "libs/ngx-perfect-scrollbar/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "libs/ngx-perfect-scrollbar/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ngx-perfect-scrollbar/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/ngx-perfect-scrollbar/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "libs/ngx-perfect-scrollbar/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "angular2-counto": {
+      "projectType": "library",
+      "root": "libs/angular2-counto",
+      "sourceRoot": "libs/angular2-counto/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "libs/angular2-counto/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/angular2-counto/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/angular2-counto/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "libs/angular2-counto/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "angular2-text-mask": {
+      "projectType": "library",
+      "root": "libs/angular2-text-mask",
+      "sourceRoot": "libs/angular2-text-mask/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "libs/angular2-text-mask/ng-package.json",
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/angular2-text-mask/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/angular2-text-mask/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "libs/angular2-text-mask/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    }
   }
 }

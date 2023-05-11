@@ -1,10 +1,13 @@
 {
-  "name": "mohr-libs",
+  "name": "Angular-libs",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build:counto": "ng build angular2-counto",
+    "build:text-mask": "ng build angular2-text-mask",
+    "build:perfect-mask": "ng build ngx-perfect-scrollbar",
+    "build:all": "concurrently \"npm run build:counto\" \"npm run build:text-mask\" \"npm run build:perfect-mask\"",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -29,6 +32,7 @@
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
+    "concurrently": "^8.0.1",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",

@@ -1,10 +1,24 @@
 {
   "name": "@awaismirza/angular2-counto",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": ">=14.0.0",
     "@angular/core": ">=14.0.0"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/awaismirza/angular-wrappers.git"
+  },
+  "author": {
+    "name": "Awais Jamil",
+    "email": "owaesmirza@gmail.com",
+    "url": "https://github.com/awaismirza"
+  },
+  "license": "MIT",
   "dependencies": {
     "tslib": "^2.3.0"
   },

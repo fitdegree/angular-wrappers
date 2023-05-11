@@ -1,24 +1,72 @@
-# Angular2TextMask
+# Angular 2 Input Mask
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+## Getting started
 
-## Code scaffolding
+First, install it.
 
-Run `ng generate component component-name --project angular2-text-mask` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project angular2-text-mask`.
-> Note: Don't forget to add `--project angular2-text-mask` or else it will be added to the default project in your `angular.json` file. 
+```bash
+npm i --save @awaismirza/angular2-text-mask
+```
 
-## Build
+Then, import it into your `@NgModule`:
 
-Run `ng build angular2-text-mask` to build the project. The build artifacts will be stored in the `dist/` directory.
+```typescript
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { TextMaskModule } from 'angular2-text-mask';
 
-## Publishing
+@NgModule({
+  imports: [
+    FormsModule,
+    TextMaskModule
+  ],
+  declarations: []
+})
+export class MyModule {}
+```
 
-After building your library with `ng build angular2-text-mask`, go to the dist folder `cd dist/angular2-text-mask` and run `npm publish`.
+Then, use it in your component:
+```typescript
+@Component({
+  selector: 'app',
+  template: `
+    <input [textMask]="{mask: mask}" [(ngModel)]="myModel" type="text"/>
+  `
+})
+export class AppComponent {
+  public myModel = ''
+  public mask = ['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]
+}
+```
 
-## Running unit tests
+## Documentation
 
-Run `ng test angular2-text-mask` to execute the unit tests via [Karma](https://karma-runner.github.io).
+As you can see in the code above, you are passing an object to the `textMask` directive.
 
-## Further help
+#### Other use-cases
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+##### Unmasking the value that is stored in the model
+
+Text Mask does not provide an option to unmask the model before storing it. You can sanitize the model on your
+side. See [here](https://github.com/text-mask/text-mask/issues/109) for details.
+
+##### `change` doesn't work
+
+`change` on an input field will not work if `[text-mask]` is present. You can use `(ngModelChange)` instead. For more
+information, see [this page](https://github.com/text-mask/text-mask/issues/236).
+
+## Example
+
+To see an example of the code running, follow these steps:
+
+1. Clone the repo, `git clone git@github.com:text-mask/text-mask.git`
+1. `cd text-mask`
+1. `cd angular2`
+1. `npm install`
+1. `npm start`
+1. Open [http://localhost:3000](http://localhost:3000)
+
+The code of the example is in [`angular2/example`](https://github.com/text-mask/text-mask/tree/master/angular2/example).
+
+## Ionic 2
+Unfortunately, we are unable to support Ionic 2 `ion-input` at this point as it overrides the `ControlValueAccessor` that Text Mask requires to perform its job.

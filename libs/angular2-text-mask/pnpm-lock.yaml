@@ -1,0 +1,61 @@
+lockfileVersion: '6.0'
+
+dependencies:
+  '@angular/common':
+    specifier: ^16.0.0
+    version: 16.0.0(@angular/core@16.0.0)(rxjs@7.8.1)
+  '@angular/core':
+    specifier: ^16.0.0
+    version: 16.0.0(rxjs@7.8.1)(zone.js@0.13.0)
+  text-mask-core:
+    specifier: ^5.1.2
+    version: 5.1.2
+  tslib:
+    specifier: ^2.3.0
+    version: 2.3.0
+
+packages:
+
+  /@angular/common@16.0.0(@angular/core@16.0.0)(rxjs@7.8.1):
+    resolution: {integrity: sha512-at3/xCevf2t9swX2P7K7gaSBuQPy7ZJsf37qQkYIuczzfij69r7s9NjYeA74/q3EWG9Yl2DCrhYoCW7ViXQINQ==}
+    engines: {node: ^16.14.0 || >=18.10.0}
+    peerDependencies:
+      '@angular/core': 16.0.0
+      rxjs: ^6.5.3 || ^7.4.0
+    dependencies:
+      '@angular/core': 16.0.0(rxjs@7.8.1)(zone.js@0.13.0)
+      rxjs: 7.8.1
+      tslib: 2.3.0
+    dev: false
+
+  /@angular/core@16.0.0(rxjs@7.8.1)(zone.js@0.13.0):
+    resolution: {integrity: sha512-scppDxtXubum6ZiGu3ogmReBtMuA5XXk5FL3YKLb3c9O7q9Z5PC8KNQ6SsaOwEb6oW+0BWXMV698p/zmd0J4tA==}
+    engines: {node: ^16.14.0 || >=18.10.0}
+    peerDependencies:
+      rxjs: ^6.5.3 || ^7.4.0
+      zone.js: ~0.13.0
+    dependencies:
+      rxjs: 7.8.1
+      tslib: 2.3.0
+      zone.js: 0.13.0
+    dev: false
+
+  /rxjs@7.8.1:
+    resolution: {integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==}
+    dependencies:
+      tslib: 2.3.0
+    dev: false
+
+  /text-mask-core@5.1.2:
+    resolution: {integrity: sha512-VfkCMdmRRZqXgQZFlDMiavm3hzsMzBM23CxHZsaeAYg66ZhXCNJWrFmnJwNy8KF9f74YvAUAuQenxsMCfuvhUw==}
+    dev: false
+
+  /tslib@2.3.0:
+    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
+    dev: false
+
+  /zone.js@0.13.0:
+    resolution: {integrity: sha512-7m3hNNyswsdoDobCkYNAy5WiUulkMd3+fWaGT9ij6iq3Zr/IwJo4RMCYPSDjT+r7tnPErmY9sZpKhWQ8S5k6XQ==}
+    dependencies:
+      tslib: 2.3.0
+    dev: false

@@ -1,0 +1,68 @@
+lockfileVersion: '6.0'
+
+dependencies:
+  '@angular/common':
+    specifier: '>=14.0.0'
+    version: 14.0.0(@angular/core@14.0.0)(rxjs@7.8.1)
+  '@angular/core':
+    specifier: '>=14.0.0'
+    version: 14.0.0(rxjs@7.8.1)(zone.js@0.11.8)
+  perfect-scrollbar:
+    specifier: ^1.5.5
+    version: 1.5.5
+  resize-observer-polyfill:
+    specifier: ^1.5.1
+    version: 1.5.1
+  tslib:
+    specifier: ^2.3.0
+    version: 2.3.0
+
+packages:
+
+  /@angular/common@14.0.0(@angular/core@14.0.0)(rxjs@7.8.1):
+    resolution: {integrity: sha512-VYydSXelPlcAnWZs6SKkOxV+rNe8zOtHKLf9jBTYT5nP5P66+va4zITo1C9bs5tbK+mRssayf615+SIGEXyJFg==}
+    engines: {node: ^14.15.0 || >=16.10.0}
+    peerDependencies:
+      '@angular/core': 14.0.0
+      rxjs: ^6.5.3 || ^7.4.0
+    dependencies:
+      '@angular/core': 14.0.0(rxjs@7.8.1)(zone.js@0.11.8)
+      rxjs: 7.8.1
+      tslib: 2.3.0
+    dev: false
+
+  /@angular/core@14.0.0(rxjs@7.8.1)(zone.js@0.11.8):
+    resolution: {integrity: sha512-Mj3r8iMlWfMbY+9DRUFZx1gKnA27Jwx3ff/VXeXBgfxaEKDYmlZSnliZSV6ssiHSUwn/U6yxDXFgcZL090zNBQ==}
+    engines: {node: ^14.15.0 || >=16.10.0}
+    peerDependencies:
+      rxjs: ^6.5.3 || ^7.4.0
+      zone.js: ~0.11.4
+    dependencies:
+      rxjs: 7.8.1
+      tslib: 2.3.0
+      zone.js: 0.11.8
+    dev: false
+
+  /perfect-scrollbar@1.5.5:
+    resolution: {integrity: sha512-dzalfutyP3e/FOpdlhVryN4AJ5XDVauVWxybSkLZmakFE2sS3y3pc4JnSprw8tGmHvkaG5Edr5T7LBTZ+WWU2g==}
+    dev: false
+
+  /resize-observer-polyfill@1.5.1:
+    resolution: {integrity: sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==}
+    dev: false
+
+  /rxjs@7.8.1:
+    resolution: {integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==}
+    dependencies:
+      tslib: 2.3.0
+    dev: false
+
+  /tslib@2.3.0:
+    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
+    dev: false
+
+  /zone.js@0.11.8:
+    resolution: {integrity: sha512-82bctBg2hKcEJ21humWIkXRlLBBmrc3nN7DFh5LGGhcyycO2S7FN8NmdvlcKaGFDNVL4/9kFLmwmInTavdJERA==}
+    dependencies:
+      tslib: 2.3.0
+    dev: false

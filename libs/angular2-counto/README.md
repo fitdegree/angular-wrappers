@@ -1,24 +1,57 @@
-# Angular2Counto
+# @owaesmirza/angular2-counto
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+Angular 14+ package for nice count animations
 
-## Code scaffolding
+## Installation
+```
+npm i --save @awaismirza/angular2-counto
+```
 
-Run `ng generate component component-name --project angular2-counto` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project angular2-counto`.
-> Note: Don't forget to add `--project angular2-counto` or else it will be added to the default project in your `angular.json` file. 
+### SystemJS
+```
+var map = {
+  'angular2-counto':     'node_modules/angular2-counto/src'
+};
 
-## Build
+var packages = {
+  'angular2-counto':   { main: 'counto.module.js', defaultExtension: 'js' }
+};
+ ```
 
-Run `ng build angular2-counto` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Angular-CLI
+Just import module as below:
 
-## Publishing
 
-After building your library with `ng build angular2-counto`, go to the dist folder `cd dist/angular2-counto` and run `npm publish`.
+ ```
+ import { NgModule }      from '@angular/core';
+ import { BrowserModule } from '@angular/platform-browser';
+ import { CountoModule }  from 'angular2-counto';
 
-## Running unit tests
+ @NgModule({
+   imports:      [ BrowserModule, CountoModule ],
+   declarations: [ AppComponent ],
+   bootstrap:    [ AppComponent ]
+ })
+ export class AppModule { }
+```
 
-Run `ng test angular2-counto` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Example with currency pipe:
+ ```
+<div counto [step]="30" [countTo]="10" [countFrom]="0" [duration]="4" (countoChange)="counto = $event" (countoEnd)="onCountoEnd()">{{counto | currency:'EUR':'symbol':'1.2-2'}}</div>
+ ```
 
-## Further help
+## Usage
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+| Parameter     | Required      | Unit          | Description                             |
+| ------------- | ------------- | ------------- | --------------------------------------- |
+| step          | yes           | milisecond    | How fast counter is updated             |
+| countTo       | yes           | number        | Any start number                        |
+| countFrom     | yes           | number        | Any end number                          |                  
+| duration      | yes           | seconds       | Duration of animation                   |
+
+Any of above parameters can be freely binded to an event. Every time parameter changes, animation will be executed.
+You can use any pipe you want to modify output to your needs.
+
+## Demo
+
+http://izupet.github.io/angular2-counto

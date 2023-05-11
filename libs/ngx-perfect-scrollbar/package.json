@@ -1,10 +1,24 @@
 {
   "name": "@awaismirza/ngx-perfect-scrollbar",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": ">=14.0.0",
     "@angular/core": ">=14.0.0"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/awaismirza/angular-wrappers.git"
+  },
+  "author": {
+    "name": "Awais Jamil",
+    "email": "owaesmirza@gmail.com",
+    "url": "https://github.com/awaismirza"
+  },
+  "license": "MIT",
   "dependencies": {
     "perfect-scrollbar": "^1.5.5",
     "resize-observer-polyfill": "^1.5.1",

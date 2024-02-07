@@ -1,6 +1,5 @@
-/*
- * Public API Surface of ngx-perfect-scrollbar
- */
+export { PerfectScrollbarComponent } from './lib/perfect-scrollbar.component';
+export { PerfectScrollbarDirective } from './lib/perfect-scrollbar.directive';
 
 export {
   Geometry,
@@ -10,10 +9,7 @@ export {
 
   PerfectScrollbarConfig,
   PerfectScrollbarConfigInterface
-} from './lib/ngx-ps.interface';
+} from './lib/perfect-scrollbar.interfaces';
 
-
-export * from './lib/ngx-ps.module';
-export * from './lib/scrollbar/scrollbar.component';
+export { PerfectScrollbarModule } from './lib/perfect-scrollbar.module';
 export * from './lib/perfect-scrollbar-force-native-scroll.directive';
-export * from './lib/perfect-scrollbar.directive';

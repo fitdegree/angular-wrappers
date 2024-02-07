@@ -4,9 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build:counto": "ng build angular2-counto",
-    "build:text-mask": "ng build angular2-text-mask",
-    "build:perfect-mask": "ng build ngx-perfect-scrollbar",
+    "build:counto": "ng build angular2-counto --prod",
+    "build:text-mask": "ng build angular2-text-mask --prod",
+    "build:perfect-mask": "ng build ngx-perfect-scrollbar --prod",
     "build:all": "concurrently \"npm run build:counto\" \"npm run build:text-mask\" \"npm run build:perfect-mask\"",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

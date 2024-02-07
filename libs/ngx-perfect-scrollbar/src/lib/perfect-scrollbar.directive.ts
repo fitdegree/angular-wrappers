@@ -1,5 +1,6 @@
 import PerfectScrollbar from 'perfect-scrollbar';
 
+import ResizeObserver from 'resize-observer-polyfill';
 
 import { Subject, fromEvent } from 'rxjs';
 import { auditTime, takeUntil } from 'rxjs/operators';
@@ -10,10 +11,10 @@ import { NgZone, Inject, Optional, ElementRef, Directive,
   OnInit, DoCheck, OnChanges, OnDestroy, Input, Output, EventEmitter,
   SimpleChanges, KeyValueDiffer, KeyValueDiffers } from '@angular/core';
 
-import { Geometry, Position } from './ngx-ps.interface';
+import { Geometry, Position } from './perfect-scrollbar.interfaces';
 
 import { PERFECT_SCROLLBAR_CONFIG, PerfectScrollbarConfig, PerfectScrollbarConfigInterface,
-  PerfectScrollbarEvent, PerfectScrollbarEvents } from './ngx-ps.interface';
+  PerfectScrollbarEvent, PerfectScrollbarEvents } from './perfect-scrollbar.interfaces';
 
 @Directive({
   selector: '[perfectScrollbar]',

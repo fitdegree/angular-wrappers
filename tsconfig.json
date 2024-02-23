@@ -20,6 +20,10 @@
       ],
       "ngx-perfect-scrollbar": [
         "dist/ngx-perfect-scrollbar"
+      ],
+      "angular2-signaturepad": [
+        "dist/angular2-signaturepad/angular2-signaturepad",
+        "dist/angular2-signaturepad"
       ]
     },
     "declaration": false,

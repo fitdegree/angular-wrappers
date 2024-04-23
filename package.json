@@ -5,6 +5,10 @@
     "@angular/common": "^17.0.0",
     "@angular/core": "^17.0.0"
   },
+  "main": "src/lib/angular2-text-mask.module.js",
+  "exports": {
+    ".": "./src/lib/angular2-text-mask.module.js"
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"

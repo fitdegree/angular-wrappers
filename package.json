@@ -1,5 +1,5 @@
 {
-  "name": "@awaismirza/angular2-text-mask",
+  "name": "angular2-text-mask",
   "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^17.0.0",

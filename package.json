@@ -1,50 +1,18 @@
 {
-  "name": "Angular-libs",
-  "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build:counto": "ng build angular2-counto --prod",
-    "build:text-mask": "ng build angular2-text-mask --prod",
-    "build:perfect-mask": "ng build ngx-perfect-scrollbar --prod",
-    "build:all": "concurrently \"npm run build:counto\" \"npm run build:text-mask\" \"npm run build:perfect-mask\"",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+  "name": "@awaismirza/angular2-text-mask",
+  "version": "0.0.2",
+  "peerDependencies": {
+    "@angular/common": "^17.0.0",
+    "@angular/core": "^17.0.0"
   },
-  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "dependencies": {
-    "@angular/animations": "^17.1.2",
-    "@angular/common": "^17.1.2",
-    "@angular/compiler": "^17.1.2",
-    "@angular/core": "^17.1.2",
-    "@angular/forms": "^17.1.2",
-    "@angular/platform-browser": "^17.1.2",
-    "@angular/platform-browser-dynamic": "^17.1.2",
-    "@angular/router": "^17.1.2",
-    "rxjs": "~7.8.0",
-    "signature_pad": "^2.3.2",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.14.3"
+    "text-mask-core": "^5.1.2",
+    "tslib": "^2.3.0"
   },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "^17.1.2",
-    "@angular/cli": "~17.1.2",
-    "@angular/compiler-cli": "^17.1.2",
-    "@types/jasmine": "~4.3.0",
-    "@types/signature_pad": "^2.3.6",
-    "concurrently": "^8.0.1",
-    "jasmine-core": "~4.6.0",
-    "karma": "~6.4.0",
-    "karma-chrome-launcher": "~3.2.0",
-    "karma-coverage": "~2.2.0",
-    "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.0.0",
-    "ng-packagr": "^17.1.2",
-    "typescript": "~5.3.3"
-  },
-  "whitelistedNonPeerDependencies": [
-    "signature_pad"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/awaismirza/angular-wrappers.git"
@@ -53,5 +21,6 @@
     "name": "Awais Jamil",
     "email": "owaesmirza@gmail.com",
     "url": "https://github.com/awaismirza"
-  }
+  },
+  "sideEffects": false
 }
